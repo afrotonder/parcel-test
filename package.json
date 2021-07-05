@@ -6,5 +6,17 @@
   "repository": "https://github.com/afrotonder/parcel-test.git",
   "author": "afrotonder <o.rosado18@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "start": "parcel ./index.html",
+    "prebuild-dev": "shx rm -rf dist/*",
+    "build-dev": "parcel build ./index.html --no-minify --public-url ./",
+    "prebuild": "shx rm -rf dist/*",
+    "build": "parcel build ./index.html --public-url ./",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+  },
+  "devDependencies": {
+    "shx": "^0.3.2"
+  }
+  
 }
