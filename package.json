@@ -1,0 +1,10 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "index.html",
+  "repository": "https://github.com/afrotonder/parcel-test.git",
+  "author": "afrotonder <o.rosado18@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
